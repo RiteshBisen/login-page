@@ -209,7 +209,6 @@
             height: 40px;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .login-container {
                 flex-direction: column;
@@ -218,6 +217,45 @@
             .login-form,
             .signup-section {
                 width: 100%;
+                padding: 20px;
+                /* Further reduced padding for smaller screens */
+            }
+
+            .login-form h1,
+            .signup-section h2 {
+                font-size: 1.8em;
+                /* Further reduced font size */
+            }
+
+            .login-form p,
+            .signup-section p {
+                font-size: 0.75em;
+                /* Further reduced font size */
+            }
+
+            .social-login a {
+                width: 30px;
+                height: 30px;
+                font-size: 0.9em;
+                margin: 0 5px;
+            }
+
+            .login-form button,
+            .signup-section button {
+                padding: 10px 15px;
+                /* Reduced button padding */
+                font-size: 0.9em;
+            }
+
+            .login-form input[type="email"],
+            .login-form .password-container {
+                padding: 8px;
+                /* Reduced input padding */
+            }
+
+            .login-form .password-container+span {
+                font-size: 0.9em;
+                /* Reduced eye icon size */
             }
         }
     </style>
