@@ -212,25 +212,31 @@
         @media (max-width: 768px) {
             .login-container {
                 flex-direction: column;
+                width: 100%;
+                /* Take full width on mobile */
+                max-width: 80%;
+                /* Ensure it takes full width */
             }
 
             .login-form,
             .signup-section {
                 width: 100%;
                 padding: 20px;
-                /* Further reduced padding for smaller screens */
             }
 
             .login-form h1,
             .signup-section h2 {
                 font-size: 1.8em;
-                /* Further reduced font size */
             }
 
             .login-form p,
             .signup-section p {
                 font-size: 0.75em;
-                /* Further reduced font size */
+            }
+
+            .social-login {
+                justify-content: center;
+                /* Center social icons on mobile */
             }
 
             .social-login a {
@@ -243,19 +249,27 @@
             .login-form button,
             .signup-section button {
                 padding: 10px 15px;
-                /* Reduced button padding */
                 font-size: 0.9em;
             }
 
             .login-form input[type="email"],
             .login-form .password-container {
                 padding: 8px;
-                /* Reduced input padding */
             }
 
             .login-form .password-container+span {
                 font-size: 0.9em;
-                /* Reduced eye icon size */
+            }
+
+            .login-form input[type="email"],
+            .login-form input[type="password"] {
+                width: calc(100% - 18px);
+                /* Adjust input width */
+            }
+
+            .or-divider {
+                margin: 15px 0;
+                /* Adjust OR divider margin */
             }
         }
     </style>
