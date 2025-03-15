@@ -222,7 +222,6 @@
                 width: 100%;
                 padding: 15px;
                 box-sizing: border-box;
-                /* Crucial for input width */
             }
 
             .login-form h1,
@@ -230,7 +229,6 @@
                 font-size: 1.6em;
                 margin-bottom: 10px;
                 word-break: break-word;
-                /* Prevent overflow */
             }
 
             .login-form p,
@@ -239,7 +237,6 @@
                 margin-bottom: 15px;
                 line-height: 1.4;
                 text-align: center;
-                /* Center text in signup */
             }
 
             .social-login {
@@ -265,15 +262,24 @@
                 font-size: 0.9em;
                 width: calc(100% - 16px);
                 box-sizing: border-box;
-                /* Crucial for input width */
+                margin-left: auto;
+                /* Add auto margins */
+                margin-right: auto;
+                display: block;
+                /* Make inputs block-level */
             }
 
             .login-form button,
             .signup-section button {
                 padding: 8px 12px;
                 font-size: 0.9em;
-                width: 100%;
-                /* Full width buttons */
+                width: calc(100% - 16px);
+                /* Match input width */
+                margin-left: auto;
+                /* Add auto margins */
+                margin-right: auto;
+                display: block;
+                /* Make buttons block-level */
             }
 
             .login-form .password-container+span {
