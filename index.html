@@ -213,62 +213,77 @@
             .login-container {
                 flex-direction: column;
                 width: 90%;
-                /* Reduced width */
                 max-width: 400px;
-                /* Further limit max width */
                 margin: 20px auto;
-                /* Center with margin */
             }
 
             .login-form,
             .signup-section {
                 width: 100%;
-                padding: 20px;
+                padding: 15px;
+                /* Reduce padding slightly */
             }
 
             .login-form h1,
             .signup-section h2 {
-                font-size: 1.8em;
+                font-size: 1.6em;
+                /* Further reduce font sizes */
+                margin-bottom: 10px;
+                /* Reduce margin */
             }
 
             .login-form p,
             .signup-section p {
-                font-size: 0.75em;
+                font-size: 0.7em;
+                /* Further reduce font sizes */
+                margin-bottom: 15px;
+                /* Reduce margin */
+                line-height: 1.4;
+                /* Improve readability */
             }
 
             .social-login {
                 justify-content: center;
+                margin-bottom: 10px;
+                /* Reduce margin */
             }
 
             .social-login a {
-                width: 30px;
-                height: 30px;
-                font-size: 0.9em;
-                margin: 0 5px;
+                width: 28px;
+                /* Slightly reduce icon sizes */
+                height: 28px;
+                font-size: 0.8em;
+                /* Slightly reduce icon font sizes */
+                margin: 0 4px;
+                /* Reduce icon spacing */
             }
 
-            .login-form button,
-            .signup-section button {
-                padding: 10px 15px;
-                font-size: 0.9em;
-            }
-
-            .login-form input[type="email"],
-            .login-form .password-container {
-                padding: 8px;
-            }
-
-            .login-form .password-container+span {
-                font-size: 0.9em;
+            .or-divider {
+                font-size: 0.8em;
+                /* Reduce "OR" font size */
+                margin: 10px 0;
+                /* Reduce margin */
             }
 
             .login-form input[type="email"],
             .login-form input[type="password"] {
-                width: calc(100% - 18px);
+                padding: 8px;
+                font-size: 0.9em;
+                /* Reduce input font sizes */
+                width: calc(100% - 16px);
+                /* Adjust input width */
             }
 
-            .or-divider {
-                margin: 15px 0;
+            .login-form button,
+            .signup-section button {
+                padding: 8px 12px;
+                /* Reduce button padding */
+                font-size: 0.9em;
+            }
+
+            .login-form .password-container+span {
+                font-size: 0.8em;
+                /* Further reduce eye icon size */
             }
         }
     </style>
