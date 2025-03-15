@@ -221,69 +221,63 @@
             .signup-section {
                 width: 100%;
                 padding: 15px;
-                /* Reduce padding slightly */
+                box-sizing: border-box;
+                /* Crucial for input width */
             }
 
             .login-form h1,
             .signup-section h2 {
                 font-size: 1.6em;
-                /* Further reduce font sizes */
                 margin-bottom: 10px;
-                /* Reduce margin */
+                word-break: break-word;
+                /* Prevent overflow */
             }
 
             .login-form p,
             .signup-section p {
                 font-size: 0.7em;
-                /* Further reduce font sizes */
                 margin-bottom: 15px;
-                /* Reduce margin */
                 line-height: 1.4;
-                /* Improve readability */
+                text-align: center;
+                /* Center text in signup */
             }
 
             .social-login {
                 justify-content: center;
                 margin-bottom: 10px;
-                /* Reduce margin */
             }
 
             .social-login a {
                 width: 28px;
-                /* Slightly reduce icon sizes */
                 height: 28px;
                 font-size: 0.8em;
-                /* Slightly reduce icon font sizes */
                 margin: 0 4px;
-                /* Reduce icon spacing */
             }
 
             .or-divider {
                 font-size: 0.8em;
-                /* Reduce "OR" font size */
                 margin: 10px 0;
-                /* Reduce margin */
             }
 
             .login-form input[type="email"],
             .login-form input[type="password"] {
                 padding: 8px;
                 font-size: 0.9em;
-                /* Reduce input font sizes */
                 width: calc(100% - 16px);
-                /* Adjust input width */
+                box-sizing: border-box;
+                /* Crucial for input width */
             }
 
             .login-form button,
             .signup-section button {
                 padding: 8px 12px;
-                /* Reduce button padding */
                 font-size: 0.9em;
+                width: 100%;
+                /* Full width buttons */
             }
 
             .login-form .password-container+span {
                 font-size: 0.8em;
-                /* Further reduce eye icon size */
             }
         }
     </style>
