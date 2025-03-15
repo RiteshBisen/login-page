@@ -212,10 +212,12 @@
         @media (max-width: 768px) {
             .login-container {
                 flex-direction: column;
-                width: 100%;
-                /* Take full width on mobile */
-                max-width: 80%;
-                /* Ensure it takes full width */
+                width: 90%;
+                /* Reduced width */
+                max-width: 400px;
+                /* Further limit max width */
+                margin: 20px auto;
+                /* Center with margin */
             }
 
             .login-form,
@@ -236,7 +238,6 @@
 
             .social-login {
                 justify-content: center;
-                /* Center social icons on mobile */
             }
 
             .social-login a {
@@ -264,12 +265,10 @@
             .login-form input[type="email"],
             .login-form input[type="password"] {
                 width: calc(100% - 18px);
-                /* Adjust input width */
             }
 
             .or-divider {
                 margin: 15px 0;
-                /* Adjust OR divider margin */
             }
         }
     </style>
